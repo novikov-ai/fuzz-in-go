@@ -1,0 +1,2 @@
+go test fuzz v1
+string("q)\xec\x91P\xb4t\xbe+\x02\xafD")
