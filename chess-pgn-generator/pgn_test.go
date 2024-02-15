@@ -23,6 +23,10 @@ func FuzzGetPictureURL(f *testing.F) {
 			return
 		}
 
+		if fetchedURL == "" {
+			t.Errorf("url is empty")
+		}
+
 		if _, err := url.ParseRequestURI(fetchedURL); err != nil {
 			t.Errorf("url is incorect: %s", err)
 		}
